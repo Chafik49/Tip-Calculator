@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    SPLI<br>TTER
+  </header>
+  <div class="app">
+    <div class="container">
+      <div class="choose-zone">
+        <div class="head">
+          <h4>Bill</h4>
+          <img src="images/icon-dollar.svg" class="dolaricon" alt="">
+          <input type="number" name="" min="1" class="" id="billinput" placeholder="0">
+        </div>
+        <div class="tip">
+          <h4>Select tip %</h4>
+          <div class="tips">
+            <span class="btn" id="five">5%</span>
+            <span class="btn" id="ten">10%</span>
+            <span class="btn" id="fifteen">15%</span>
+            <span class="btn" id="twenyFive">25%</span>
+            <span class="btn" id="fifty">50%</span>
+            <input type="number" name="" id="custominput" min="1" placeholder="Custom">
+          </div>
+          <div class="peaple">
+            <h4>Number of peaple</h4>
+            <img src="images/icon-person.svg" alt="">
+            <input type="number" name="" id="peapleinput" min="1" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="result-zone">
+        <div class="tip-am">
+          <div class="title">
+            <h4>Tip Amount</h4>
+            <h5>/person</h5>
+          </div>
+          <div class="amount-result result" id="amountResult">$0.00</div>
+        </div>
+        <div class="tip-total">
+          <div class="title">
+            <h4>Total</h4>
+            <h5>/person</h5>
+          </div>
+          <div class="total-result result" id="totalResult">$0.00</div>
+        </div>
+        <div class="reset-btn" id="resetBtn">RESET</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

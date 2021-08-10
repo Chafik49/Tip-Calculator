@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.app{
+    background-color: white;
+    max-width: fit-content;
+    height: fit-content ;
+    border-radius: 10px;
+}
+@media (max-width:767px) {
+    header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .app{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* styling the choose zone */
+.choose-zone{
+    /* background-color: gray; */
+    margin-right: 20px;
+    padding: 15px;
+}
+.head {
+    position: relative;
+}
+.choose-zone .head h4{
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 7px;
+
+}
+.head img {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 5px;
+
+    
+}
+.choose-zone .head input {
+    padding: 7px 7px 7px 15px;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.head input::placeholder {
+    position: absolute;
+    right: 19px;
+    font-size: 18px;
+    margin-top: -2px;
+    
+    
+}
+.tip h4{
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 7px;
+    
+}
+.tips {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 7px;
+}
+.tips span {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+    /* margin: 5px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+
+    
+}
+span.active {
+    background-color:hsl(172, 67%, 45%) ;
+}
+.tips input {
+    /* width: fit-content; */
+    max-width: 100px;
+    height: 37px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+ 
+}
+.tips input::placeholder {
+    font-size: 17px;
+    z-index: 20px;
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    /* color: red; */
+}
+.peaple h4 {
+    color: hsl(183, 100%, 15%);
+}
+
+.peaple input {
+    padding: 7px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 7px 7px 7px 18px;
+    cursor: pointer;
+}
+
+
+.peaple input::placeholder {
+    position: absolute;
+    right: 19px;
+    font-size: 18px;
+    height: 100%;
+    margin-top: -2px;
+    
+}
+.peaple img {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 5px;
+    
+}
+/* end choose zone*/
+
+@media (max-width:767px) {
+    .container{
+        flex-direction: column;
+    }
+    .choose-zone {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+/* styling result zone*/
+
+.result-zone{
+    background-color: hsl(183, 100%, 15%);
+    padding: 15px;
+    max-width: 250px;
+    /* overflow-x: hidden; */
+    min-height: fit-content;
+    border-radius: 10px;
+}
+.tip-am,
+.tip-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.tip-am {
+    margin-bottom: 59px;
+}
+.tip-total {
+    margin-bottom: 30px;
+}
+.title {
+    margin-right: 30px;
+}
+.title h4 {
+    color: white;
+}
+.title h5 {
+    color: grey;
+}
+.result {
+    font-size: 25px;
+    color: hsl(172, 67%, 45%);
+    transition: .3s;
+}
+.reset-btn {
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%) ;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    .result-zone {
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
