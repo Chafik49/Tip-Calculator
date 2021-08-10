@@ -18,6 +18,10 @@ function removeActiveClass(){
         btn.classList.remove("active");
     })
 }
+
+custominput.onfocus = function(){
+    removeActiveClass();
+}
 var tipChoose;
 
 
